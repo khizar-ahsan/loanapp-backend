@@ -48,6 +48,7 @@ public class CustomerDetails {
 	@OneToOne(cascade = CascadeType.ALL)
 	private SanctionLetter customerSanctionLetter;
 	
-	
+	@OneToOne(cascade = CascadeType.ALL)
+	private Documents doc;
 	
 }

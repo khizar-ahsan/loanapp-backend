@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.controller.CibilDemo;
+
 import com.example.demo.model.EnquiryModel;
 import com.example.demo.repo.EnquiryRepository;
 import com.example.demo.serviceI.EnquiryServicei;

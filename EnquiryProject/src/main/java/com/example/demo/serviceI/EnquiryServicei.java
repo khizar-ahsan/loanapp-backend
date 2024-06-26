@@ -2,7 +2,7 @@ package com.example.demo.serviceI;
 
 import java.util.List;
 
-import com.example.demo.controller.CibilDemo;
+
 import com.example.demo.model.EnquiryModel;
 
 public interface EnquiryServicei {
