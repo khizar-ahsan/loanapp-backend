@@ -46,6 +46,7 @@ public class CustomerController {
 	                  
  {
 		CustomerDetails cd = new CustomerDetails();
+		Email email = new Email();
 		ObjectMapper om = new ObjectMapper();
 		try
 		{
@@ -56,6 +57,10 @@ public class CustomerController {
 			cd.getDoc().setPanCard(panCard.getBytes());
 			cd.getDoc().setPhoto(photo.getBytes());
 			cd.getDoc().setSignature(signature.getBytes());
+			email.setToMail(cd.getEmail());
+			email.setSubject("STAR LOAN FINANCE");
+			email.setText("Thanks for enquiry and register with us...");
+			csi.sendMail(email);
 			csi.saveCustomer(cd);
 			
 		}
